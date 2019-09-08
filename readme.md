@@ -5,10 +5,17 @@ A simple utility module which will help you implement time-based applications.
 # Table of Contents
 
 * [Behaviour](#Behaviour)
+* [Installation](#Installation)
 * [Input](#Input)
   * [Examples](#Examples)
   * [String input Units](#string-input-units)
   * [Options](#Options)
+
+## Installation
+
+```
+$ npm install @caltrop/ms.js
+```
 
 ## Behaviour
 
