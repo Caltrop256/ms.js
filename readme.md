@@ -1,8 +1,16 @@
-#ms.js
+# ms.js
 
 A simple utility module which will help you implement time-based applications.
 
-##Behaviour
+# Table of Contents
+
+* [Behaviour](#Behaviour)
+* [Input](#Input)
+  * [Examples](#Examples)
+  * [String input Units](#String input Units)
+  * [Options](#Options)
+
+## Behaviour
 
 **The function will always return a `Time` Object.**
 
@@ -46,11 +54,11 @@ const time = require('ms.js');
 time(5200) + 300; // => 5500
 ```
 
-##Input
+## Input
 
 Valid Input is always either a `Number` or a `String`!
 
-###Examples:
+### Examples
 ```js
 const time = require('ms.js');
 
@@ -70,7 +78,7 @@ time(Infinity).str                         // => '1 eternity'
 ```
 (assuming that all relevant values will be shown, see: "**Options**" section)
 
-###String input Units
+### String input Units
 
 Unit Name | Definition
 ---|---
@@ -97,7 +105,7 @@ Millisecond | `1 ms`
 Microsecond | `0.001 ms`
 Nanosecond | `0.000001 ms` or 0.001 microseconds
 
-###Options
+### Options
 
 Options are parsed in an Object as the 2nd parameter to the function.
 
