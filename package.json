@@ -1,6 +1,6 @@
 {
   "name": "@caltrop/ms.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A small module which handles time conversion for you",
   "main": "index.js",
   "scripts": {
