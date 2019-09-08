@@ -21,7 +21,6 @@
   "author": "Caltrop <caltropuwu@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "basic": "^2.0.3",
     "match-sorter": "^4.0.1"
   },
   "bugs": {
