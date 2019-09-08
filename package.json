@@ -1,0 +1,23 @@
+{
+  "name": "ms.js",
+  "version": "1.0.0",
+  "description": "A small module which handles time conversion for you",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CaltropUwU/ms.js.git"
+  },
+  "keywords": ["time", "ms", "converter", "input", "delay", "dates"],
+  "author": "Caltrop <caltropuwu@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "match-sorter": "^4.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/ashleygwilliams/my_package/issues"
+  },
+  "homepage": "https://github.com/ashleygwilliams/my_package"
+}
