@@ -7,7 +7,7 @@ A simple utility module which will help you implement time-based applications.
 * [Behaviour](#Behaviour)
 * [Input](#Input)
   * [Examples](#Examples)
-  * [String input Units](#String input Units)
+  * [String input Units](#string-input-units)
   * [Options](#Options)
 
 ## Behaviour
