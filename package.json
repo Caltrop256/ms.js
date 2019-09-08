@@ -1,6 +1,6 @@
 {
   "name": "@caltrop/ms.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small module which handles time conversion for you",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,10 @@
     "converter",
     "input",
     "delay",
-    "dates"
+    "dates",
+    "parse",
+    "userinput",
+    "utility"
   ],
   "author": "Caltrop <caltropuwu@gmail.com>",
   "license": "ISC",

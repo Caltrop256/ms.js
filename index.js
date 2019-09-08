@@ -27,9 +27,9 @@ class Time {
         this.day           =     round(ms / 86400000) % 365;
         this.hour          =     round(ms / 3600000) % 24;
         this.minute        =     round(ms / 60000) % 60;
-	this.second        =     round(ms / 1000) % 60;
-	this.millisecond   =     round(ms) % 1000;
-	this.microsecond   =     round(ms * 1000) % 1000;
+	    this.second        =     round(ms / 1000) % 60;
+	    this.millisecond   =     round(ms) % 1000;
+	    this.microsecond   =     round(ms * 1000) % 1000;
         this.nanosecond    =     round(ms * 1e6) % 1000;
 
         let str = '';
@@ -61,7 +61,7 @@ const units = [
     new Unit('millenium', 3.1536e+13, ['ml', 'milleniums', 'millennia']),
     new Unit('century', 3.1536e+12, ['l', 'cent', 'centurys', 'centuries']),
     new Unit('generation', 1103760000000, ['generations']),
-    new Unit('decade', 3.1536e+11, 'dc', 'decades'),
+    new Unit('decade', 3.1536e+11, ['dc', 'decades']),
     new Unit('megaminute', 60000000000, ['megaminutes']),
     new Unit('year', 3.1536e+10, ['y', 'yr', 'yrs', 'years']),
     new Unit('season', 7884086400, ['quarter', 'trimonth']),
@@ -105,6 +105,7 @@ function timeFromString(str = '', opts) {
 
         var from = units.find(u => u.name == sepArg[1] || u.aliases.includes(sepArg[1]));
         if(!from) {
+            if(opts.strictMode) return void 0;
             let uNames = [];
             units.forEach(u => {
                 uNames.push(...[u.name, ...u.aliases]);
@@ -113,7 +114,7 @@ function timeFromString(str = '', opts) {
             if(!matches.length) continue;
             var from = units.find(u => u.name == matches[0] || u.aliases.includes(matches[0]));
         };
-        ms += parseInt(sepArg[0]) * from.definition;
+        ms += parseFloat(sepArg[0]) * from.definition;
         str = str.substr(sepArg[0].length + sepArg[1].length);
     };
     if(!ms) return void 0;
