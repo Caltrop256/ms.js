@@ -27,9 +27,9 @@ class Time {
         this.day           =     round(ms / 86400000) % 365;
         this.hour          =     round(ms / 3600000) % 24;
         this.minute        =     round(ms / 60000) % 60;
-	    this.second        =     round(ms / 1000) % 60;
-	    this.millisecond   =     round(ms) % 1000;
-	    this.microsecond   =     round(ms * 1000) % 1000;
+	this.second        =     round(ms / 1000) % 60;
+	this.millisecond   =     round(ms) % 1000;
+	this.microsecond   =     round(ms * 1000) % 1000;
         this.nanosecond    =     round(ms * 1e6) % 1000;
 
         let str = '';
